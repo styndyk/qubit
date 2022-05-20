@@ -274,8 +274,145 @@ input:focus {
     transition: transform .3s ease-in-out;
 }
 
+.brands__link:hover {
+    color: #6F2CFF;
+}
+
+
 .brands__link:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
 /*  END Brand Styles */
+
+/* Statistics Styles */
+
+.statistics {
+    margin-bottom: 70px;
+}
+
+.statistics__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.statistics__left, .statistics__right {
+    width: 50%;
+}
+
+.statistics__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.statistics__left__title {
+    font-size: 40px;
+    line-height: 45px;
+    color: #1C1C1C;
+    margin-bottom: 50px;
+}
+
+.statistics__left__buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.statistics__left__button.book {
+    padding: 15px 45px;
+    color: #fff;
+    background-color: #6F2CFF;
+    border-radius: 20px;
+    transition: .3s all linear;
+    margin-right: 20px;
+}
+
+.statistics__left__button.book:hover {
+    color: #1c1c1c;
+}
+
+.statistics__left__button.meet {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1C1C1C;
+    transition: .3s all linear;
+    position: relative;
+}
+
+.statistics__left__button.meet::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #6F2CFF;
+    bottom: -5px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.statistics__left__button.meet:hover {
+    color: #6F2CFF;
+}
+
+.statistics__left__button.meet:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.statistics__left__additional p {
+    line-height: 30px;
+    margin-bottom: 7px;
+}
+
+.statistics__left__additional__link {
+    position: relative;
+}
+
+
+.statistics__left__additional__link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #000;
+    bottom: -5px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.statistics__left__additional__link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.statistics__right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.statistics__right__item {
+    width: 300px;
+    margin-bottom: 90px;
+}
+
+.statistics__right__item__title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 5px;
+}
+
+.statistics__right__item__subtitle {
+    line-height: 22px;
+}
+
+/* END Statistics Styles */
