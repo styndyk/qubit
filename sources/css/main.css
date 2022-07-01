@@ -596,16 +596,7 @@ input:focus {
 }
 
 .trust_brands__slideshow {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* width: calc(320px * 3 + 80px); */
-    min-width: 100%;
-    min-height: 200px;
-    display: grid; /* Розібратись як працює grid */
-    grid-auto-flow: column; /* Розібратись як працює grid */
-    grid-auto-columns: 22%; /* Розібратись як працює grid */
-    overflow-x: auto;
-    overscroll-behavior-inline: contain; /* Розібратись */
+    max-width: 1050px;
 }
 
 .trust_brands__slideshow__item {
@@ -616,6 +607,11 @@ input:focus {
     margin-bottom: 105px;
     margin: 10px;
     flex-shrink: 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
 }
 
 .trust_brands__slideshow__item__img {
