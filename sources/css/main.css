@@ -790,3 +790,66 @@ input:focus {
 }
 
 /* END  Ecosystem */
+
+/* Book Styles */
+
+section.book {
+    background: url("../img/book-background.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 330px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book__title {
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.book__form {
+    min-width: 455px;
+    display: flex;
+}
+
+#book__form__email {
+    border: 1px solid #fff;
+    border-radius: 27px 0 0 27px;
+    background-color: #fff;
+    padding: 12px 20px;
+    min-width: 268px;
+}
+
+#book__form__email[placeholder] {
+    line-height: 21px;
+}
+
+#book__form__email:focus {
+    outline: 1px solid #6F2CFF;
+}
+
+#book__form__button {
+    border: 1px solid #6F2CFF;
+    border-radius: 0 27px 27px 0;
+    padding: 15px 25px;
+    background: #6F2CFF;
+    color: #fff;
+    min-width: 187px;
+    transition: all .3s linear;
+}
+
+#book__form__button[value] {
+    line-height: 21px;
+}
+
+#book__form__button:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+/* END Book */
