@@ -802,6 +802,7 @@ section.book {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .book__title {
@@ -853,3 +854,41 @@ section.book {
 }
 
 /* END Book */
+
+/* Connect Styles */
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect__reward {
+    margin-bottom: 30px;
+}
+
+.connect_title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 45px;
+    color: #1C1C1C;
+    margin-bottom: 15px;
+}
+
+.connect__socials {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect__socials svg {
+    margin-right: 30px;
+}
+
+.connect__socials svg:last-child {
+    margin-right: 0;
+}
+
+/* END Connect */
